@@ -24,6 +24,16 @@ fn main() {
     
     // Dibujar el contorno blanco
     draw_polygon(&poligon_1, &mut framebuffer, 0xFFFFFF);
+    // Poligono 2
+    let poligon_2 = [
+        (321, 335), (288, 286), (339, 251), (374, 302)
+    ];
+
+    // Rellenar de azul
+    fill_polygon(&poligon_2, &mut framebuffer, 0xFF0000);
+    
+    // Dibujar el contorno blanco
+    draw_polygon(&poligon_2, &mut framebuffer, 0xFFFFFF);
 
     let _ = framebuffer.render_buffer("out.bmp");
 
