@@ -24,6 +24,7 @@ fn main() {
     
     // Dibujar el contorno blanco
     draw_polygon(&poligon_1, &mut framebuffer, 0xFFFFFF);
+    
     // Poligono 2
     let poligon_2 = [
         (321, 335), (288, 286), (339, 251), (374, 302)
