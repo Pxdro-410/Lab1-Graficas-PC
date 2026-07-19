@@ -1,10 +1,11 @@
 mod framebuffer;
 mod line;
 mod bmp;
+mod polygon_fill;
 
 use crate::bmp::WriteBmp;
 use crate::framebuffer::Framebuffer;
-use crate::line::draw_line;
+use crate::polygon_fill::{draw_polygon, fill_polygon};
 
 fn main() {
     let mut framebuffer = Framebuffer::new(800, 600);
